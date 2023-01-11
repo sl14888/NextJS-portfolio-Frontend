@@ -1,0 +1,112 @@
+.post_link {
+  text-decoration: none;
+  color: inherit;
+
+  &:first-of-type {
+    animation-delay: 0.06s;
+  }
+
+  &:nth-child(2) {
+    animation-delay: 0.12s;
+  }
+
+  &:nth-child(3) {
+    animation-delay: 0.18s;
+  }
+
+  &:nth-child(4) {
+    animation-delay: 0.24s;
+  }
+
+  &:nth-child(5) {
+    animation-delay: 0.3s;
+  }
+
+  &:nth-child(6) {
+    animation-delay: 0.36s;
+  }
+
+  &:nth-child(7) {
+    animation-delay: 0.42s;
+  }
+
+  &:nth-child(8) {
+    animation-delay: 0.48s;
+  }
+
+  &:nth-child(9) {
+    animation-delay: 0.54s;
+  }
+
+  & .post_body {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 0;
+  }
+}
+
+.post_body {
+  display: flex;
+  height: 350px;
+  border: 1px solid var(#{--card-background-default});
+  border-radius: 15px;
+  transition: border 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    transform 0.15s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 40px;
+  background-color: var(#{--card-background-default});
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 50px 50px -20px rgb(50 50 93 / 3%), 0 30px 10px -30px rgb(0 0 0 / 6%);
+  }
+
+  &:hover .post_image {
+    box-shadow: 0px 18px 27px -2px rgba(0, 144, 255, 0.2);
+  }
+}
+
+.post_image {
+  width: 100%;
+  min-height: 260px;
+  height: 260px;
+  text-align: center;
+  position: relative;
+  background-color: #00000012;
+  border-radius: 15px 15px 0 0;
+}
+
+.post_info {
+  padding: 25px 30px 30px;
+  color: var(#{--text-color-default});
+}
+
+.post_category {
+  & i {
+    display: inline-block;
+    margin-right: 10px;
+    height: 10px;
+    width: 10px;
+    border-radius: 30px;
+  }
+}
+
+.post_title {
+  font-weight: 800;
+  font-size: 25px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  line-height: 34px;
+  color: var(#{--text-color-default});
+}
+
+.post_descr {
+  margin: 0;
+  font-family: Inter, system-ui, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(#{--text-color-default});
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 144px;
+}

@@ -1,0 +1,33 @@
+$light-color: #0a3465;
+$dark-color: #fff;
+
+$body-background-dark: #0d1117;
+$body-background-light: #f7f8f8;
+
+$card-background-light: #fff;
+$card-background-dark: #192028;
+
+$border-bottom-light: #0000000d;
+$border-bottom-dark: #384554;
+
+:root {
+  //body-background
+  --body-background-dark: #{$body-background-dark};
+  --body-background-light: #{$body-background-light};
+  --body-background-default: var(#{--body-background-light});
+
+  //text
+  --text-color-dark: #{$dark-color};
+  --text-color-light: #{$light-color};
+  --text-color-default: var(#{--text-color-light});
+
+  //card-background
+  --card-background-dark: #{$card-background-dark};
+  --card-background-light: #{$card-background-light};
+  --card-background-default: var(#{--card-background-light});
+
+  //border-bottom
+  --border-bottom-dark: #{$border-bottom-dark};
+  --border-bottom-light: #{$border-bottom-light};
+  --border-bottom-default: var(#{--border-bottom-light});
+}

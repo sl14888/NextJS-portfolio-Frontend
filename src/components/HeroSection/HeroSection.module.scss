@@ -1,0 +1,137 @@
+.hero {
+  margin-top: 40px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.text__block {
+  width: 50%;
+}
+
+.greetings {
+  font-size: 24px;
+  font-weight: 500;
+  animation-delay: 0.06s;
+  margin-bottom: 20px;
+  & span {
+    font-weight: bold;
+  }
+}
+
+.title {
+  // background: #0a80cf;
+  // background: linear-gradient(to left, #0a80cf 29%, #a544cf 99%);
+  // background-clip: text;
+  // -webkit-text-fill-color: transparent;
+  animation-delay: 0.12s;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 38px;
+  margin-bottom: 20px;
+}
+
+.btns {
+  display: flex;
+  animation-delay: 0.018s;
+}
+
+.btn {
+  margin-top: 25px;
+  text-align: center;
+  flex: auto;
+  text-decoration: none;
+  border-radius: 15px;
+  padding: 15px 45px;
+  color: inherit;
+  border: 1px solid var(--border-bottom-default);
+  transition: all 0.3s ease-in-out 0s;
+
+  &:first-child {
+    margin-right: 30px;
+  }
+
+  &:hover {
+    color: dodgerblue;
+    border: 1px solid dodgerblue;
+  }
+}
+
+.image {
+  width: 40%;
+  animation-delay: 0.26s;
+
+  height: 320px;
+
+  & img {
+    border-radius: 15px;
+  }
+}
+
+.linking {
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-between;
+
+  &__list {
+    animation-delay: 0.36s;
+
+    & a:hover {
+      opacity: 0.6;
+    }
+
+    & a:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__email {
+    animation-delay: 0.46s;
+  }
+}
+
+@media (max-width: 630px) {
+  .hero {
+    margin-top: 60px;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text__block {
+    width: 100%;
+    text-align: center;
+  }
+
+  .title {
+    margin: 0;
+    background: #0a80cf;
+    background: linear-gradient(to left, #0a80cf 29%, #a544cf 99%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .image {
+    display: none;
+  }
+}
+
+@media (max-width: 460px) {
+  .btns {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+
+    &:first-child {
+      margin-right: 0;
+    }
+  }
+}
