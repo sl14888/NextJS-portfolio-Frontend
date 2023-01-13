@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: process.env.API_BASE_URL,
+  baseURL: 'https://strapi-production-b860.up.railway.app',
 });
 
 export const fetchCategories = async () => api.get('/api/categories');
