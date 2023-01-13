@@ -18,10 +18,7 @@ const PostCard: FC<IPropTypes> = ({ post }) => {
     <Link href={`/post/${post.slug}`} className={`${s.post_link} animate`}>
       <div className={s.post_body}>
         <div className={s.post_image}>
-          <img
-            src={`http://localhost:1337${post.image.data.attributes.url}`}
-            alt="post"
-          />
+          <img src={`${post.image.data.attributes.url}`} alt="post" />
         </div>
         <div className={s.post_info}>
           <div className={s.post_category}>

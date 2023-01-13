@@ -22,7 +22,7 @@ const PortfolioCard: FC<IPropTypes> = ({ post }) => {
         </div>
       </div>
       <div className={s.card__img}>
-        <img src={`http://localhost:1337${post.image.data.attributes.url}`} alt="1" />
+        <img src={`${post.image.data.attributes.url}`} alt="1" />
       </div>
     </div>
   );

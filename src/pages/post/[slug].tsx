@@ -32,7 +32,7 @@ export const getServerSideProps: GetServerSideProps = async ({
   const praramsString = qs.stringify({
     populate: ['image', 'category'],
     filters: {
-      Slug: {
+      slug: {
         $eq: params?.slug,
       },
     },

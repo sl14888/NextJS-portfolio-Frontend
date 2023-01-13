@@ -11,6 +11,8 @@ interface IPropTypes {
 const PostCardFullWidth: FC<IPropTypes> = ({ post }) => {
   const selectedColor = getColorByCategory(post.category.data.attributes.title);
 
+  console.log(post);
+
   const style = { backgroundColor: selectedColor } as React.CSSProperties;
 
   return (
@@ -18,10 +20,7 @@ const PostCardFullWidth: FC<IPropTypes> = ({ post }) => {
       <div className={s.post_body}>
         <div className={s.post_image__wrapper}>
           <div className={s.post_image}>
-            <img
-              src={`http://localhost:1337${post.image.data.attributes.url}`}
-              alt="post"
-            />
+            <img src={`${post.image.data.attributes.url}`} alt="post" />
           </div>
         </div>
         <div className={s.post_info}>

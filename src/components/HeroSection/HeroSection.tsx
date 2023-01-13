@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import s from './HeroSection.module.scss';
 import GlobalSvgSelector from 'assets/icons/GlobalSvgSelector';
+import Image from 'next/image';
 
 const HeroSection = () => {
   return (
@@ -30,9 +31,11 @@ const HeroSection = () => {
         </div>
 
         <div className={`${s.image} animate`}>
-          <img
-            src="http://localhost:1337/uploads/photo_2022_11_05_23_01_58_48b7af49f1.jpg"
+          <Image
+            src="https://res.cloudinary.com/dwnt1azz4/image/upload/v1673634905/photo_2022_11_05_23_01_58_aee28b3129.jpg?updated_at=2023-01-13T18:35:06.248Z"
             alt="main"
+            width={300}
+            height={200}
           />
         </div>
       </div>

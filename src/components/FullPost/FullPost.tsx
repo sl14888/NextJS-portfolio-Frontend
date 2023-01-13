@@ -25,10 +25,7 @@ const FullPost: FC<IFullPost> = ({ data }) => {
         <li>{formatDate(data.attributes.createdAt)}</li>
       </ul>
       <div className={`${s.text} animate`}>
-        <img
-          src={`http://localhost:1337${data.attributes.image.data.attributes.url}`}
-          alt="1"
-        />
+        <img src={`${data.attributes.image.data.attributes.url}`} alt="1" />
         <ReactMarkdown>{data.attributes.content}</ReactMarkdown>
       </div>
 
